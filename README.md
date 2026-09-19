@@ -2,6 +2,17 @@
 
 A static marketing website for **Empower Solution FK**, an impact windows and doors company serving Florida homeowners.
 
+## Live site
+
+This repo deploys to GitHub Pages via `.github/workflows/deploy-pages.yml` on every push to `main`. Once enabled (see below), it's live at:
+
+**https://empower31.github.io/empower-solution-FK-web/**
+
+To turn it on (one-time, repo admin only):
+1. Repo **Settings → General → Danger Zone → Change visibility** → set to **Public** (GitHub Pages on the free plan requires a public repo).
+2. Repo **Settings → Pages → Build and deployment → Source** → select **GitHub Actions**.
+3. Merge/push to `main` — the `Deploy to GitHub Pages` workflow will run and publish the site.
+
 ## Overview
 
 This is a responsive, single-page site built with plain HTML, CSS, and vanilla JavaScript — no build step or dependencies required.
