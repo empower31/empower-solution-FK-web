@@ -142,45 +142,29 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 24px;
+  padding: 8px 24px;
   gap: 20px;
   transition: padding 0.25s ease;
 }
-.site-header.scrolled .nav-inner { padding: 9px 24px; }
+.site-header.scrolled .nav-inner { padding: 6px 24px; }
 .logo {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
 }
-.logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--navy), var(--blue));
-  color: var(--white);
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 0.95rem;
+.logo-img {
+  height: 84px;
+  width: auto;
+  display: block;
+  transition: height 0.25s ease;
 }
-.logo-mark span { color: var(--orange); }
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-head);
-  font-weight: 600;
-  color: var(--navy);
-  font-size: 1.05rem;
-  line-height: 1.2;
-}
-.logo-text small {
+.site-header.scrolled .logo-img { height: 60px; }
+.logo-tagline {
   font-family: var(--font-body);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--gray-500);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -765,6 +749,7 @@ img { max-width: 100%; display: block; }
   padding: 60px 24px 40px;
 }
 .footer-brand { display: flex; flex-direction: column; gap: 16px; }
+.footer-logo-img { height: 64px; width: auto; }
 .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.6); max-width: 300px; }
 .footer-col { display: flex; flex-direction: column; gap: 12px; }
 .footer-col h4 { color: var(--white); font-size: 0.95rem; margin-bottom: 6px; }
@@ -815,6 +800,8 @@ img { max-width: 100%; display: block; }
 @media (max-width: 640px) {
   .topbar-inner { justify-content: center; text-align: center; }
   .topbar-tag { display: none; }
+  .logo-img { height: 60px; }
+  .logo-tagline { display: none; }
   .hero { padding: 60px 0 50px; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .grid-4.product-grid { grid-template-columns: 1fr; }
