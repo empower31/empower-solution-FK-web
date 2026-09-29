@@ -312,24 +312,6 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
   display: block;
 }
-.badge-float {
-  transition: transform 0.25s ease;
-}
-.badge-float:hover { transform: translateY(-4px) scale(1.05); }
-.badge-float {
-  position: absolute;
-  background: var(--white);
-  color: var(--charcoal);
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 999px;
-  box-shadow: var(--shadow);
-  white-space: nowrap;
-}
-.badge-1 { top: 10px; left: -20px; }
-.badge-2 { bottom: 40px; right: -10px; }
-.badge-3 { bottom: -10px; left: 30px; }
 
 /* Trust bar */
 .trust-bar {
