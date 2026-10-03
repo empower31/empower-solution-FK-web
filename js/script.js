@@ -139,6 +139,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- Door showcase (tap to open on touch devices) ---------- */
+  document.querySelectorAll('.door-card').forEach((card) => {
+    card.addEventListener('click', () => {
+      const wasOpen = card.classList.contains('open');
+      document.querySelectorAll('.door-card.open').forEach((other) => {
+        if (other !== card) other.classList.remove('open');
+      });
+      card.classList.toggle('open', !wasOpen);
+    });
+  });
+
   /* ---------- Button ripple effect ---------- */
   document.querySelectorAll('.btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
