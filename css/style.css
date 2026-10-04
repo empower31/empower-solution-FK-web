@@ -560,7 +560,7 @@ img { max-width: 100%; display: block; }
 }
 .door-panel-entry::after { right: 14px; }
 .door-card:hover .door-panel-entry,
-.door-card:focus-within .door-panel-entry,
+.door-card:focus-visible .door-panel-entry,
 .door-card.open .door-panel-entry { transform: rotateY(-78deg); }
 
 /* French doors: two panels swinging open from the center */
@@ -574,10 +574,10 @@ img { max-width: 100%; display: block; }
 .door-panel-french-left::after { right: 10px; }
 .door-panel-french-right::after { left: 10px; }
 .door-card:hover .door-panel-french-left,
-.door-card:focus-within .door-panel-french-left,
+.door-card:focus-visible .door-panel-french-left,
 .door-card.open .door-panel-french-left { transform: rotateY(-72deg); }
 .door-card:hover .door-panel-french-right,
-.door-card:focus-within .door-panel-french-right,
+.door-card:focus-visible .door-panel-french-right,
 .door-card.open .door-panel-french-right { transform: rotateY(72deg); }
 
 /* Sliding door: glides sideways instead of swinging */
@@ -587,7 +587,7 @@ img { max-width: 100%; display: block; }
 }
 .door-panel-sliding::after { right: 14px; }
 .door-card:hover .door-panel-sliding,
-.door-card:focus-within .door-panel-sliding,
+.door-card:focus-visible .door-panel-sliding,
 .door-card.open .door-panel-sliding { transform: translateX(-88%); }
 
 /* Storefront: single panel with a mullion grid over the glass */
@@ -598,13 +598,13 @@ img { max-width: 100%; display: block; }
 }
 .door-panel-storefront::before {
   background-image:
-    repeating-linear-gradient(90deg, var(--charcoal) 0 2px, transparent 2px calc(33% - 2px)),
-    repeating-linear-gradient(0deg, var(--charcoal) 0 2px, transparent 2px calc(33% - 2px)),
+    repeating-linear-gradient(90deg, var(--charcoal) 0 2px, transparent 2px calc(100% / 3)),
+    repeating-linear-gradient(0deg, var(--charcoal) 0 2px, transparent 2px calc(100% / 3)),
     linear-gradient(155deg, #dfe7ea 0%, #aab3b8 60%, #7d868b 100%);
 }
 .door-panel-storefront::after { right: 14px; }
 .door-card:hover .door-panel-storefront,
-.door-card:focus-within .door-panel-storefront,
+.door-card:focus-visible .door-panel-storefront,
 .door-card.open .door-panel-storefront { transform: rotateY(-78deg); }
 
 .door-label { font-size: 1.05rem; margin-bottom: 4px; }
