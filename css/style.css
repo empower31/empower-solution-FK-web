@@ -627,7 +627,7 @@ img { max-width: 100%; display: block; }
 .door-panel-entry::after { right: 14px; }
 .door-card:hover .door-panel-entry,
 .door-card:focus-visible .door-panel-entry,
-.door-card.open .door-panel-entry { transform: rotateY(-78deg); }
+.door-card.open .door-panel-entry { transform: rotateY(-88deg); }
 
 /* French doors: two panels swinging open from the center */
 .door-panel-french-left,
@@ -641,10 +641,10 @@ img { max-width: 100%; display: block; }
 .door-panel-french-right::after { left: 10px; }
 .door-card:hover .door-panel-french-left,
 .door-card:focus-visible .door-panel-french-left,
-.door-card.open .door-panel-french-left { transform: rotateY(-72deg); }
+.door-card.open .door-panel-french-left { transform: rotateY(-88deg); }
 .door-card:hover .door-panel-french-right,
 .door-card:focus-visible .door-panel-french-right,
-.door-card.open .door-panel-french-right { transform: rotateY(72deg); }
+.door-card.open .door-panel-french-right { transform: rotateY(88deg); }
 
 /* Sliding door: glides sideways instead of swinging */
 .door-panel-sliding {
@@ -654,7 +654,7 @@ img { max-width: 100%; display: block; }
 .door-panel-sliding::after { right: 14px; }
 .door-card:hover .door-panel-sliding,
 .door-card:focus-visible .door-panel-sliding,
-.door-card.open .door-panel-sliding { transform: translateX(-88%); }
+.door-card.open .door-panel-sliding { transform: translateX(calc(-100% - 20px)); }
 
 /* Storefront: single panel with a mullion grid over the glass */
 .door-panel-storefront {
@@ -671,7 +671,7 @@ img { max-width: 100%; display: block; }
 .door-panel-storefront::after { right: 14px; }
 .door-card:hover .door-panel-storefront,
 .door-card:focus-visible .door-panel-storefront,
-.door-card.open .door-panel-storefront { transform: rotateY(-78deg); }
+.door-card.open .door-panel-storefront { transform: rotateY(-88deg); }
 
 .door-label { font-size: 1.05rem; margin-bottom: 4px; }
 .door-hint { display: block; font-size: 0.8rem; color: var(--gray-500); }
