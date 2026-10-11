@@ -535,26 +535,6 @@ img { max-width: 100%; display: block; }
 .sparta-feature strong { display: block; color: var(--lime); font-size: 0.92rem; margin-bottom: 4px; }
 .sparta-feature p { margin: 0; color: rgba(255, 255, 255, 0.75); font-size: 0.85rem; }
 
-/* Products */
-.product-grid { grid-template-columns: repeat(4, 1fr); }
-.product-thumb {
-  height: 140px;
-  border-radius: var(--radius);
-  background: linear-gradient(150deg, var(--c1), var(--c2));
-  margin-bottom: 16px;
-  position: relative;
-  overflow: hidden;
-}
-.product-thumb::after {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border: 3px solid rgba(255,255,255,0.5);
-  border-radius: 8px;
-}
-.product h4 { font-size: 1.05rem; margin-bottom: 6px; }
-.product p { color: var(--gray-700); font-size: 0.9rem; }
-
 /* Door showcase */
 .door-grid { grid-template-columns: repeat(4, 1fr); }
 .door-card {
@@ -964,7 +944,6 @@ img { max-width: 100%; display: block; }
   .sparta-inner { grid-template-columns: 1fr; text-align: center; }
   .sparta-copy > p { margin-left: auto; margin-right: auto; }
   .sparta-plaque { max-width: 320px; margin: 0 auto; }
-  .grid-4.product-grid { grid-template-columns: repeat(2, 1fr); }
   .door-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(3, 1fr); }
   .contact-inner { grid-template-columns: 1fr; }
@@ -999,7 +978,6 @@ img { max-width: 100%; display: block; }
   .hero { padding: 60px 0 50px; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .sparta-features { grid-template-columns: 1fr; }
-  .grid-4.product-grid { grid-template-columns: 1fr; }
   .door-grid { grid-template-columns: 1fr; }
   .process-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
